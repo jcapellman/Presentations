@@ -6,8 +6,6 @@ namespace CSharpEcosystem
 	{
 		public App ()
 		{
-			InitializeComponent();
-
 			MainPage = new CSharpEcosystem.MainPage();
 		}
 

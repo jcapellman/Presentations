@@ -16,14 +16,18 @@ namespace CSharpEcosystem.ViewModels
             set { _message = value; OnPropertyChanged(); }
         }
 
-        public async Task<bool> LoadData()
+        public bool LoadData()
         {
+            /*
             var httpClient = new HttpClient();
 
-            var jsonString = await httpClient.GetStringAsync("http://localhost/api/Values");
+            var jsonString = await httpClient.GetStringAsync("http://localhost:55665/api/Account");
 
             Message = (string)JsonConvert.DeserializeObject(jsonString);
-            
+            */
+
+            Message = "Hello World";
+
             return true;
         }
     }

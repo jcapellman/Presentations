@@ -19,9 +19,11 @@ namespace CSharpEcosystem
             BindingContext = new MainPageModel();
         }
 
-        protected override async void OnBindingContextChanged()
+        protected override void OnBindingContextChanged()
         {
-            var result = await viewModel.LoadData();
+            var result = viewModel.LoadData();
+
+            lBanner.Text = viewModel.Message;
         }
     }
 }

@@ -5,6 +5,12 @@
              x:Class="CSharpEcosystem.MainPage">
 
   <Grid VerticalOptions="Center" HorizontalOptions="Center">
-    <Label Text="{Binding Message}" />
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    
+    <Image Grid.Row="0" Source="Logo.png" />
+    <Label Grid.Row="1" FontSize="12" HorizontalTextAlignment="Center" TextColor="White" x:Name="lBanner" />
   </Grid>
 </ContentPage>
