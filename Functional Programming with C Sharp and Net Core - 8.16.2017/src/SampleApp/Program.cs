@@ -47,6 +47,21 @@ namespace SampleApp
             Console.WriteLine($"In {result.Year} there was {result.Amount} million in sales");
 
             Console.ReadKey();
+
+            Console.Clear();
+
+            /* ************************************************************** */
+            Console.WriteLine($"Function Expression Example{System.Environment.NewLine}");
+
+            var expressionPerson = new Person
+            {
+                Age = 32,
+                Name = "John Doe"
+            };
+            
+            Console.WriteLine($"Is John Doe really John Doe? {expressionPerson.IsTrue(a => a.Name == "John Doe")}");
+
+            Console.ReadKey();
         }
     }
 }
